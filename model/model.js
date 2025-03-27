@@ -3,7 +3,10 @@ const model = {
     app:{
         currentPage: 'homePage',
 
-        pages:['homePage', 'logInPage', 'userPage', 'searchPage', 'assignmentPage', 'feedbackPage', ],
+        pages:['homePage', 'logInPage', 'userPage', 'searchPage', 'assignmentPage', 'feedbackPage', 
+            'assignmentDeliveryPage', 'nextDaysAssignmentPage', 'adminClassPage', 'assignmentBank',
+            'createNewAssignmentPage', 'editAssignmentPage', 'calenderPage', 'datePage' 
+        ],
 
     },
 
@@ -34,9 +37,17 @@ const model = {
             {theme: '', tagName: '', color: ''}
         ],
 
+        adminClassPage: [
+            {classes:[className, assignments]},
+        ],
+
         users: [
             {id:1, email: '', name: '', password:'', }
         ],
-        date:{day:1,week:1,month:1,year:2025}
+        date:{day:1,week:1,month:1,year:2025},
+
+        assignmentBank: [
+            {id:1, assignment: '', subject: '', tags: [], }
+        ]
     },
 }
