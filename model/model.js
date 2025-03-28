@@ -53,9 +53,9 @@ const model = {
 
        // calendar:{weekdays:[],month:[], days  ,assignmentPlanned:{date ,text: ''}},
 
-        // assignmentBank:[
-        //     {id:1, assignmentTitle: '', subject: [], tags: [], }
-        // ]
+         assignmentBank:[
+             {id:1, assignmentTitle: '', subject: [], tags: [], }
+         ]
             
     },
 }
