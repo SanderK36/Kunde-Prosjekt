@@ -5,7 +5,7 @@ const model = {
 
         pages:['homePage', 'logInPage', 'userPage', 'searchPage', 'assignmentPage', 'feedbackPage', 
             'assignmentDeliveryPage', 'nextDaysAssignmentPage', 'adminClassPage', 'assignmentBank',
-            'createNewAssignmentPage', 'editAssignmentPage', 'calenderPage', 'datePage' 
+            'createNewAssignmentPage', 'editAssignmentPage', 'calendarPage', 'datePage' 
         ],
 
     },
@@ -13,41 +13,49 @@ const model = {
     input:{
         logInInput: {emailInput: "", passwordInput: "", admin: true,},
         
-        comment:{text:'', assignmentId:1, },
-
         //Nice to have 
         rating: {userId:0 , ratingNumber:5,},
-
+        
         search: {searchInput: ''},
-
+        
+        assignmentsThisWeek:[],
+        
+        newAssignments:{id:1, deliveryDate:'', title:'', subject:[], tags:[], save:false, delete:false, push:false},
+        
+        editAssignments:{id:1,title:'' ,subject:[], tags:[], save:false, delete:false},
     },
 
     data:{
         login: false,
-        header:[
-            { id: 1, logo:'', assignments:'', search:'', notification:'', calender:'', user:''},       
-    ],
         
-        week:'',
-        assignments: [
-            { id: 1, week:'', day:'',  subject: '', tasks: '', tags: [], isDelivered: false,}
+        assignments:[
+            { id: 1, week:'1', day:'1',  subject: [], title: ''  , text: '', tagsId: [1], 
+            isDelivered: false, classId:0, creatorId:0}
         ],
+
 
         tags: [
-            {theme: '', tagName: '', color: ''}
+            {tagId:1 , theme: 'Læring', tagName: 'Logg', color: 'Blue'}
         ],
+        //nice to have
+       // adminOverview:[
+        //    {id:1, classes:[className, assignments,], addNewClass:false}
+       // ],
 
-        adminClassPage: [
-            {classes:[className, assignments]},
-        ],
-
-        users: [
-            {id:1, email: '', name: '', password:'', }
+        users:[
+            {id:1, email: '', name: '', password:''}
         ],
         date:{day:1,week:1,month:1,year:2025},
 
-        assignmentBank: [
-            {id:1, assignment: '', subject: '', tags: [], }
-        ]
+        assignmentToday: {message:'', assignmentId:0, save: false, delete: false},
+
+        assignmentTomorrow: {assignmentId: 0, date: 1-1-2025,} ,
+
+       // calendar:{weekdays:[],month:[], days  ,assignmentPlanned:{date ,text: ''}},
+
+        // assignmentBank:[
+        //     {id:1, assignmentTitle: '', subject: [], tags: [], }
+        // ]
+            
     },
 }
