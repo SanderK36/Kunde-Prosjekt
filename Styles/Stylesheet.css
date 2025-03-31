@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* Login */
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logInForm{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#chooseRole{
+    display: space-between;
+    margin-left: 46%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#email{
+    width: 250px;
+    height: 25px;
+}
+
+#password {
+    height: 25px;
+}
+
+.studentRole {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.adminRole {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.logInButton {
+    height: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
