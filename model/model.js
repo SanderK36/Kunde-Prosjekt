@@ -55,7 +55,11 @@ const model = {
 
          assignmentBank:[
              {id:1, assignmentTitle: '', subject: [], tags: [], }
-         ]
-            
+         ],
+       icons: [
+        { id:'calendar' ,link: `<i class="fa-solid fa-calendar-days"></i`,},
+        { id:'magnifyingGlass',link: `<i class="fa-solid fa-magnifying-glass"></i>`},
+        { id:`bell`, link:`<i class="fa-solid fa-bell"></i>`}
+    ]     
     },
 }

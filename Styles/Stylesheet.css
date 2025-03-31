@@ -50,10 +50,58 @@ h1{
     cursor: pointer;
 }
 
+/* homepage */
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(207, 207, 207);
+    font-size: 35px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#assignmentBtn{
+    border-radius: 10px;
+    height: 40px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+}
 
 
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+}
 
+.test {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, auto);
+    padding: 20px;
+}
 
+.fa-solid {
+    cursor: pointer;
+}
 
+.commentAndFile {
+    font-size: 25px;
+}
 
-
+#currentWeek{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    margin-left: 18px;
+    padding: 5px;
+}
