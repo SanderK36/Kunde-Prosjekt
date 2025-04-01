@@ -42,8 +42,11 @@ const model = {
         //    {id:1, classes:[className, assignments,], addNewClass:false}
        // ],
 
+       /*Lage noen dummy users som kan teste login*/ 
         users:[
-            {id:1, email: '', name: '', password:''}
+            {id:1, email: 'dummy@user.net', name: 'dummy', password:'111'},
+            {id:2, email: 'jeg@user.net', name: 'jeg', password:'222'},
+            {id:3, email: 'deg@user.net', name: 'deg', password:'333'},
         ],
         date:{day:1,week:1,month:1,year:2025},
 
