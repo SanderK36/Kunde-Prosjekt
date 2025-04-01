@@ -5,7 +5,7 @@ function userPageView(){
     
     <div id='header'>
     <div class ="logo">Logo</div>
-    <button id="assignmentBtn">Mine oppgaver</button>
+    <button id="assignmentBtn" onclick=>Mine oppgaver</button>
     <i class="fa-solid fa-calendar-days"></i>
     <i class="fa-solid fa-bell"></i>
     <div class="userButton">Bruker</div>
@@ -16,5 +16,7 @@ function userPageView(){
     </div>
 
     </div> <br>
+
+    <h1 id='user'>Bruker: Navn Navnesen <button id='logOutBtn' onclick="logInPageView()">Logg ut</button></h1>
     `;
 }
