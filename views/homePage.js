@@ -9,7 +9,7 @@ function homePageView(){
     <button id="assignmentBtn">Mine oppgaver</button>
     <i class="fa-solid fa-calendar-days"></i>
     <i class="fa-solid fa-bell"></i>
-    <div class="userButton">Bruker</div>
+    <div class="userButton" onclick="userPageView()">Bruker</div>
 
     <div id="search">
     <input type="text" id="searchInput" placeholder="Søk...">
