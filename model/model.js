@@ -29,8 +29,12 @@ const model = {
         login: false,
         
         assignments:[
-            { id: 1, week:'1', day:'1',  subject: [], title: ''  , text: '', tagsId: [1], 
-            isDelivered: false, classId:0, creatorId:0}
+            { id: 1, week:'Uke: 1', day:'1',  subject: [], title: 'noe gøy'  , text: 'det er sol i dag', tagsId: [1], 
+            isDelivered: false, classId:0, creatorId:0},
+            { id: 2, week:'Uke: 2', day:'1',  subject: [], title: 'noe gøy'  , text: 'det er sol i dag', tagsId: [1], 
+                isDelivered: false, classId:0, creatorId:0},
+            { id: 3, week:'Uke: 5', day:'1',  subject: [], title: 'noe gøy'  , text: 'det er sol i dag', tagsId: [1], 
+                isDelivered: false, classId:0, creatorId:0},
         ],
 
 
