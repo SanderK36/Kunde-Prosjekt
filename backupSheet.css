@@ -1,0 +1,206 @@
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Login */
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logInForm{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#chooseRole{
+    display: space-between;
+    margin-left: 46%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#email{
+    width: 250px;
+    height: 25px;
+}
+
+#password {
+    height: 25px;
+}
+
+.studentRole {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.adminRole {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.logInButton {
+    height: 25px;
+    cursor: pointer;
+}
+
+/* homepage */
+#header {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: #D3D3D3;
+    color: black;
+    font-size: 35px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-right: 25%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 20px;
+    border-radius: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+}
+
+#assignmentBtn{
+    background-color: rgba(246,77,1,1.0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#assignmentBtn:hover{
+    background-color: #e65c50;
+}
+
+
+.box {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.test {
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, auto);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px; */
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px; /* Better spacing */
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.gridIcons {
+    font-size: 25px;
+}
+
+#currentWeek{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 60px;
+    width: 90px;
+    margin-left: 18px;
+    padding: 5px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.fa-magnifying-glass {
+    color: black;
+}
+
+.fa-magnifying-glass:hover {
+    color: rgba(205,65,3,1);
+}
+
+.userButton {
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.fa-bell {
+    color: rgba(246,77,1,1.0);
+}
+
+.fa-bell:hover {
+    color: rgba(205,65,3,1);
+}
+
+.fa-square-xmark {
+   color: red;
+}
+
+.fa-square-check {
+    color: green;
+}
+
+.logo, .userButton {
+    cursor: pointer;
+    font-weight: bold;
+}
