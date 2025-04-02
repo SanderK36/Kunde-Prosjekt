@@ -5,7 +5,7 @@ function userPageView(){
     
     <div id='header'>
     <div class ="logo">Logo</div>
-    <button id="assignmentBtn" onclick=>Mine oppgaver</button>
+    <button id="assignmentBtn" onclick="homePageView()">Mine oppgaver</button>
     <i class="fa-solid fa-calendar-days"></i>
     <i class="fa-solid fa-bell"></i>
     <div class="userButton">Bruker</div>
