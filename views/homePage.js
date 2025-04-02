@@ -8,7 +8,7 @@ function homePageView(){
     <div class ="logo">Logo</div>
     <button id="assignmentBtn">Mine oppgaver</button>
     <i class="fa-solid fa-calendar-days"></i>
-    <i class="fa-solid fa-bell"></i>
+    <i class="fa-solid fa-bell" onclick="tomorrowsAssignmentView()"></i>
     <div class="userButton" onclick="userPageView()">Bruker</div>
 
     <div id="search">
