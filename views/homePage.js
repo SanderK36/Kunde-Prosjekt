@@ -6,8 +6,8 @@ function homePageView(){
     
     <div id='header'>
     <div class ="logo">Logo</div>
-    <button id="assignmentBtn">Mine oppgaver</button>
-    <i class="fa-solid fa-calendar-days"></i>
+    <button id="assignmentBtn" onclick="homePageView()">Mine oppgaver</button>
+    <i class="fa-solid fa-calendar-days" onclick="calendarView()"></i>
     <i class="fa-solid fa-bell" onclick="tomorrowsAssignmentView()"></i>
     <div class="userButton" onclick="userPageView()">Bruker</div>
 

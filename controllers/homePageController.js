@@ -9,7 +9,7 @@ function searchAssignment(){
     model.input.search.searchInput = searchInput.value;
 
     if(model.input.search.searchInput.trim() === "") {
-        alert("Please enter a search term");
+        alert("Vennligst skriv inn et søk");
     } else {
         searchPageView();
     }

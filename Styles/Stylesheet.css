@@ -131,9 +131,11 @@ h1{
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: white;
     font-size: 20px;
-    border-radius: 0px;
+    border-radius: 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 35px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }
 
 #assignmentBtn{
@@ -145,10 +147,11 @@ h1{
     font-size: 16px;
     transition: 0.3s ease;
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #assignmentBtn:hover{
-    background-color: #e65c50;
+    background-color: rgba(205,65,3,1);
 }
 
 
@@ -158,9 +161,12 @@ h1{
     justify-content: center;
     text-align: center;
     padding: 15px;
-    border: 1px solid darkgray;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     cursor: default;
+    color: white;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    
     
 }
 
@@ -169,10 +175,34 @@ h1{
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, auto);
     border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* background: linear-gradient(135deg, #ff7e5f, #feb47b); */
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     padding: 20px;
+    color: white;
+    gap: 1px;
 }
+
+/* Øverste venstre hjørne */
+.box:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* Øverste høyre hjørne */
+.box:nth-child(7) {
+    border-top-right-radius: 10px;
+}
+
+/* Nederste venstre hjørne */
+.box:nth-child(15) {
+    border-bottom-left-radius: 10px;
+}
+
+/* Nederste høyre hjørne */
+.box:nth-child(21) {
+    border-bottom-right-radius: 10px;
+}
+
+
 
 .fa-solid {
     cursor: pointer;
@@ -186,12 +216,15 @@ h1{
     display: flex;
     align-items: center;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     height: 60px;
     width: 90px;
-    margin-left: 18px;
+    margin-left: 25px;
     padding: 5px;
     cursor: default;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
 }
 
 #search {
@@ -223,10 +256,20 @@ h1{
 
 .userButton {
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.userButton:hover {
+    color: rgba(205,65,3,1);
 }
 
 .logo {
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: rgba(205,65,3,1);
 }
 
 .fa-bell {
@@ -262,13 +305,14 @@ h1{
 /* userPage*/
 
 #user{
-    margin-left: 50px;
+    position: absolute;
+    left: 22px;
     display: flex;
     justify-content:start;
     align-items: center;
     padding: 20px;
     background: rgb(240, 236, 236);
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 10px;
     width: 500px;
     cursor: default;
@@ -314,4 +358,105 @@ h1{
 
 #searchPageBox li {
     margin-bottom: 60px;
+}
+
+.fa-calendar-days {
+    transition: 0.3s ease;
+}
+
+.fa-calendar-days:hover {
+    color: rgba(205,65,3,1);
+}
+
+.calendarLayout {
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, auto);
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    gap: 1px; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 5px; 
+}
+
+.calendarBox {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    color: white;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    transition: all 0.3s ease-in-out;
+}
+
+.calendarBox:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gridIcons i {
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.gridIcons i:hover {
+    color: #ff7e5f;
+}
+
+/* Øverste venstre hjørne */
+.calendarBox:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* Øverste høyre hjørne */
+.calendarBox:nth-child(7) {
+    border-top-right-radius: 10px;
+}
+
+/* Nederste venstre hjørne */
+.calendarBox:nth-child(36) {
+    border-bottom-left-radius: 10px;
+}
+
+/* Nederste høyre hjørne */
+.calendarBox:nth-child(42) {
+    border-bottom-right-radius: 10px;
+}
+
+#calendarHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
