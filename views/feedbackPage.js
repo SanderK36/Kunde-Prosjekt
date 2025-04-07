@@ -1,7 +1,7 @@
 
 function feedbackPageView(){
     document.getElementById('app').innerHTML = /*HTML*/ `
-
+    
     <div id='header'>
     <div class ="logo">Logo</div>
     <button id="assignmentBtn" onclick="homePageView()">Mine oppgaver</button>

@@ -40,13 +40,13 @@ function homePageView(){
         else if(i === 11) content = "Hvordan gjøre et godt morgenmøte";
         else if(i === 12) content = "Morramøtet bli kjent";
         else if(i === 13) content = `<div class="gridIcons"><i class="fa-solid fa-square-check"></i></div>`;
-        else if(i === 14) content = `<div class="gridIcons"><i class="fa-solid fa-file"></i> <i class="fa-solid fa-comment"></i></div>`;
+        else if(i === 14) content = `<div class="gridIcons"><i class="fa-solid fa-file" onclick="assignmentDeliveryPageView()"></i> <i class="fa-solid fa-comment" onclick="feedbackPageView()"></i></div>`;
         else if(i === 16) content = "Tirsdag";
         else if(i === 17) content = "Psykologisk trygghet"
         else if(i === 18) content = "Hvordan være forberedt"
         else if(i === 19) content = "Signaturstyrker Kommunikasjon"
         else if(i === 20) content = `<div class="gridIcons"><i class="fa-solid fa-square-xmark"></i></div>`;
-        else if(i === 21) content = `<div class="gridIcons"><i class="fa-solid fa-file"></i> <i class="fa-solid fa-comment"></i></div>`;
+        else if(i === 21) content = `<div class="gridIcons"><i class="fa-solid fa-file" onclick="assignmentDeliveryPageView()"></i> <i class="fa-solid fa-comment" onclick="feedbackPageView()"></i></div>`;
         else content = `Item ${i}`;
 
         test.innerHTML += `<div class ="box">${content}</div>`;
