@@ -15,6 +15,12 @@ function tomorrowsAssignmentView(){
 
     </div> <br>
     <h1 class="topLeftBox" id ="tomorrowAssignmentBox">Morgendages oppgave</h1>
-    
+    <div class="centerTextBox"> 
+    <h2>Hvordan være forberedt</h2>
+
+    <li>Test</li>
+    <li>Test</li>
+    <li>Test</li>
+    </div>
     `;
 }
