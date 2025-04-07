@@ -18,7 +18,7 @@ function homePageView(){
 
     </div> <br>
 
-    <h1 id='currentWeek'>Uke 8</h1>
+    <h1 class="topLeftBox" id="currentWeek">Uke 8</h1>
 
     <div class="test"></div>
     

@@ -212,7 +212,7 @@ h1{
     font-size: 25px;
 }
 
-#currentWeek{
+.topLeftBox{
     display: flex;
     align-items: center;
     border-radius: 10px;
