@@ -17,7 +17,10 @@ function tomorrowsAssignmentView(){
     <h1 class="topLeftBox" id ="tomorrowAssignmentBox">Morgendages oppgave</h1>
     <div class="centerTextBox"> 
     <h2>Hvordan være forberedt</h2>
+    <div id="lineDiv"></div>
+    <br>
 
+    <div class="bulletPoints">
     <li>Test</li>
     <li>Test</li>
     <li>Test</li>

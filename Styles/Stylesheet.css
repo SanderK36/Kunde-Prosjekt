@@ -461,3 +461,39 @@ h1{
     margin-left: 30%;
     margin-right: 30%;
 }
+
+.centerTextBox {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white; */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 25px;
+    margin-top: 5%;
+
+
+}
+
+#lineDiv {
+    border: 1px solid white;
+    width: 85%;
+}
+
+.bulletPoints li {
+    margin-right: 725px;
+  }
