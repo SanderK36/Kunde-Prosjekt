@@ -32,21 +32,21 @@ function homePageView(){
         else if(i === 3) content = `<h1>Tema</h1>`;
         else if(i === 4) content = `<h1>Oppgave</h1>`;
         else if(i === 5) content = `<h1>Tags</h1>`;
-        else if(i === 6) content = "";
-        else if(i === 7) content = `<h1>levert?</h1>`;
+        else if(i === 6) content = "<h1>Levert</h1>";
+        else if(i === 7) content = `<h1>Valg</h1>`;
         else if(i === 8 || i === 15) content = "8";
         else if(i === 9) content = "Mandag";
         else if(i === 10) content = "Psykologisk trygghet"
         else if(i === 11) content = "Hvordan gjøre et godt morgenmøte";
         else if(i === 12) content = "Morramøtet bli kjent";
-        else if(i === 13) content = `<div class="gridIcons"><i class="fa-solid fa-file"></i> <i class="fa-solid fa-comment"></i></div>`;
-        else if(i === 14) content = `<div class="gridIcons"><i class="fa-solid fa-square-check"></i></div>`;
+        else if(i === 13) content = `<div class="gridIcons"><i class="fa-solid fa-square-check"></i></div>`;
+        else if(i === 14) content = `<div class="gridIcons"><i class="fa-solid fa-file"></i> <i class="fa-solid fa-comment"></i></div>`;
         else if(i === 16) content = "Tirsdag";
         else if(i === 17) content = "Psykologisk trygghet"
         else if(i === 18) content = "Hvordan være forberedt"
         else if(i === 19) content = "Signaturstyrker Kommunikasjon"
-        else if(i === 20) content = `<div class="gridIcons"><i class="fa-solid fa-file"></i> <i class="fa-solid fa-comment"></i></div>`;
-        else if(i === 21) content = `<div class="gridIcons"><i class="fa-solid fa-square-xmark"></i></div>`;
+        else if(i === 20) content = `<div class="gridIcons"><i class="fa-solid fa-square-xmark"></i></div>`;
+        else if(i === 21) content = `<div class="gridIcons"><i class="fa-solid fa-file"></i> <i class="fa-solid fa-comment"></i></div>`;
         else content = `Item ${i}`;
 
         test.innerHTML += `<div class ="box">${content}</div>`;
