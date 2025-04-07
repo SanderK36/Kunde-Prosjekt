@@ -14,7 +14,7 @@ function tomorrowsAssignmentView(){
     </div>
 
     </div> <br>
-
+    <h1 id="currentWeek">Morgendages oppgave</h1>
     
     `;
 }
