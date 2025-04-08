@@ -3,7 +3,7 @@ function feedbackPageView(){
     document.getElementById('app').innerHTML = /*HTML*/ `
     
     <div id='header'>
-    <div class ="logo">Logo</div>
+    <div class ="logo"><img src="./img/GET.png" alt=""></div>
     <button id="assignmentBtn" onclick="homePageView()">Mine oppgaver</button>
     <i class="fa-solid fa-calendar-days" onclick="calendarView()"></i>
     <i class="fa-solid fa-bell" onclick="tomorrowsAssignmentView()"></i>
@@ -30,7 +30,7 @@ function feedbackPageView(){
     <div id ='feedbackBox'> 
     <h2>Tilbakemelding</h2>
     <div id="feedBackLine"></div>
-    <input type="text" id="feedbackInput" placeholder="Skriv tilbakemelding her..."><br>
+    <textarea name="" id="feedbackInput" placeholder="Skriv tilbakemelding her..."></textarea><br>
     <button id="feedBackBtn" onclick="">Send</button>
     </div>
     </div>
