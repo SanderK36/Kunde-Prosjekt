@@ -13,6 +13,17 @@ function adminClassPageView(){
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
     </div>
+    </div> <br>
+
+    <h1> Adminoversikt over klassene</h1>
+    <div id="classBoxes">
+    <div id="box">Klasse 1</div>
+    <div id="box">Klasse 2</div>
+    <div id="box">Klasse 3</div> <br>
+    <div id="box">Klasse 4</div>
+    <div id="box">Klasse 5</div>
+    <div id="addBox">+</div>
+    </div>
 `;
 
 

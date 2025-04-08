@@ -577,6 +577,7 @@ h1{
     margin-left: 30%;
   }
 
+<<<<<<< Updated upstream
   /* #deliveryBtn {
     background-color: rgba(246,77,1,1.0);
     color: white;
@@ -633,4 +634,30 @@ h1{
     width: 300px;
     resize: none;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+=======
+  #classBoxes{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  #box{
+    border: solid 1px black;
+    height: 150px;
+    width: 200px;
+    margin-left: 10px;
+  }
+  #addBox{
+    border: solid 1px black;
+    height: 150px;
+    width: 200px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+>>>>>>> Stashed changes
   }
