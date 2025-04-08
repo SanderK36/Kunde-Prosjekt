@@ -3,7 +3,7 @@ function adminClassPageView(){
     document.getElementById('app').innerHTML = /*HTML*/ `
     
     <div id='header'>
-    <div class ="logo">Logo</div>
+    <div class ="logo"><img src="./img/GET.png" alt=""></div>
     <button id="assignmentBtn" onclick="homePageView()">Mine oppgaver</button>
     <i class="fa-solid fa-calendar-days" onclick="calendarView()"></i>
     <i class="fa-solid fa-bell" onclick="tomorrowsAssignmentView()"></i>
@@ -15,16 +15,20 @@ function adminClassPageView(){
     </div>
     </div> <br>
 
-    <h1> Adminoversikt over klassene</h1>
-    <div id="classBoxes">
-    <div id="box">Klasse 1</div>
-    <div id="box">Klasse 2</div>
-    <div id="box">Klasse 3</div> <br>
-    <div id="box">Klasse 4</div>
-    <div id="box">Klasse 5</div>
-    <div id="addBox">+</div>
+    <div>
+    <h1 id="adminClassPageHeader"> Adminoversikt over klassene <button id="addBox">Trykk her for å legge til flere klasser</button></h1>
+    </div>
+
+    <div id="adminClassBoxes">
+    <div class="classBox">Klasse 1 <i class="fa-solid fa-pen-to-square"></i></div>
+    <div class="classBox">Klasse 2 <i class="fa-solid fa-pen-to-square"></i></div>
+    <div class="classBox">Klasse 3 <i class="fa-solid fa-pen-to-square"></i></div>
+    <div class="classBox">Klasse 4 <i class="fa-solid fa-pen-to-square"></i></div>
+    <div class="classBox">Klasse 5 <i class="fa-solid fa-pen-to-square"></i></div>
+    <div class="classBox">Klasse 6 <i class="fa-solid fa-pen-to-square"></i></div>
     </div>
 `;
+
 
 
 }
