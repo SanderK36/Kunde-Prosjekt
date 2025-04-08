@@ -16,10 +16,11 @@ function feedbackPageView(){
     </div> <br>
 
     
+    <div id="feedBackWrap">
     <div id ='feedbackBox'> 
     <h2>Oppgave: Hvordan gjøre et godt morgenmøte</h2>
-    <div id="lineDiv"></div>
-    <div>
+    <div id="feedBackLine"></div>
+    <div class="bulletPoints">
     <li>Test</li>
     <li>Test</li>
     <li>Test</li>
@@ -28,10 +29,10 @@ function feedbackPageView(){
     </div> 
     <div id ='feedbackBox'> 
     <h2>Tilbakemelding</h2>
-    <div id="lineDiv"></div>
+    <div id="feedBackLine"></div>
     <input type="text" id="feedbackInput" placeholder="Skriv tilbakemelding her..."><br>
-    <button id="assignmentBtn" onclick="">Send</button>
-    
+    <button id="feedBackBtn" onclick="">Send</button>
+    </div>
     </div>
     
     `;

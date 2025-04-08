@@ -515,13 +515,40 @@ h1{
   }
 
   #feedbackInput{
-    outline: none;
-    margin-top: 10px;
-    width: 80%;
-    height: 50%;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    border-radius: 20px;
-    padding: auto;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
     border: 1px solid transparent;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    outline: none;
+    height: 100px;
+    justify-content: center;
+    margin-left: 11%;
+  }
+
+  #feedBackWrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  #feedBackLine {
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  #feedBackBtn {
+    background-color: rgba(246,77,1,1.0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 30%;
   }
