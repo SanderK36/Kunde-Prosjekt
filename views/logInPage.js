@@ -3,7 +3,7 @@ function logInPageView(){
     
 document.getElementById('app').innerHTML = /*HTML*/`
 <div id='header'>
-    <div class ="logo">Logo</div>
+<div class ="logo"><img src="./img/GET.png" alt=""></div>
 
     </div> <br>
 
