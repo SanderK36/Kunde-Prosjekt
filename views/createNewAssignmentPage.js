@@ -14,28 +14,50 @@ function createNewAssignmentPageView(){
     </div>
 
     </div> <br>
-    <div id="feedBackWrap">
-    <div id ='feedbackBox'> 
-    <h2>Lag ny oppgave Leveres: Velg dato</h2>
-    <div id="lineDiv"></div>
+    <div id="newAssignmentWrap">
+    <div id ='newAssignmentBox'> 
+    <h2 class="newAssignmentHeader">Lag ny oppgave</h2>
+    <h2 class="chooseDateHeader">Leveres: Velg dato <select name="dropdown" id="dropdown">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    </select></h2>
+    <div id="newAssignmentLineDiv"></div>
 
     <div>
-    <h2>Tema: Velg Tema Tittel: Tags: Velg tags</h2>
+    <h2>Velg Tema: <select name="dropdown" id="dropdown">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    </select></h2>
+
+    <h2>Velg tags: <select name="dropdown" id="dropdown">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    </select></h2>
+
+    <h2>Velg Tittel: <select name="dropdown" id="dropdown">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    </select></h2>
 
     </div>
     <br>
-    
 
 
-    <textarea name="" id="teeest" placeholder="Skriv her..."></textarea>
-
-
-
-
-        <div id="assignmentWrap">
-    <button>Lagre</button>
-    <button>Avbryt</button>
-    <button>Push</button>
+    <div id="newAssignmentBtnWrap">
+    <textarea name="" id="newAssignmentTextarea" placeholder="Skriv her..."></textarea>
+    <div id="buttonContainer">
+        <button>Lagre</button>
+        <button>Avbryt</button>
+        <button>Push</button>
+    </div>
     </div>
 
     </div>
