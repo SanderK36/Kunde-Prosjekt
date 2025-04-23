@@ -51,6 +51,7 @@ const model = {
             {id:1, email: 'dummy@user.net', name: 'dummy', password:'111'},
             {id:2, email: 'jeg@user.net', name: 'jeg', password:'222'},
             {id:3, email: 'deg@user.net', name: 'deg', password:'333'},
+            {id:4, emial: 'admin@user.net', name: 'admin', passord:'123'}
         ],
         date:{day:1,week:1,month:1,year:2025},
 
