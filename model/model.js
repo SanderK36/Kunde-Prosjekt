@@ -11,7 +11,7 @@ const model = {
     },
 
     input:{
-        logInInput: {emailInput: "", passwordInput: "", admin: true,},
+        logInInput: {emailInput: "", passwordInput: "", },
         
         //Nice to have 
         rating: {userId:0 , ratingNumber:5,},
@@ -49,9 +49,9 @@ const model = {
        /*Lage noen dummy users som kan teste login*/ 
         users:[
             {id:1, email: 'dummy@user.net', name: 'dummy', password:'111', admin: false,},
-            {id:2, email: 'jeg@user.net', name: 'jeg', password:'222', false: false,},
+            {id:2, email: 'jeg@user.net', name: 'jeg', password:'222', admin: false,},
             {id:3, email: 'deg@user.net', name: 'deg', password:'333', admin: false},
-            {id:4, emial: 'admin@user.net', name: 'admin', passord:'123', admin: true}
+            {id:4, email: 'admin@user.net', name: 'admin', password:'123', admin: true}
         ],
         date:{day:1,week:1,month:1,year:2025},
 

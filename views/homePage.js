@@ -10,7 +10,7 @@ function homePageView(){
     <i class="fa-solid fa-calendar-days" onclick="calendarView()"></i>
     <i class="fa-solid fa-bell" onclick="tomorrowsAssignmentView()"></i>
     <div class="userButton" onclick="userPageView()">Bruker</div>
-
+    <div> admin </div>
     <div id="search">
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>

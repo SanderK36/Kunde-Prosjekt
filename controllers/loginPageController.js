@@ -4,11 +4,18 @@ function checkLoginInfo(){
         let currentUser = model.data.users[i];
 
         if(model.input.logInInput.emailInput == currentUser.email 
-            && model.input.logInInput.passwordInput == currentUser.password){
+            && model.input.logInInput.passwordInput == currentUser.password
+            && currentUser.admin == false){
                 
            
             homePageView();
         }
+        else if (model.input.logInInput.emailInput == currentUser.email && 
+            model.input.logInInput.passwordInput == currentUser.password && 
+            currentUser.admin == true){
+                adminClassPageView()
+        }
+
         else {
         
             // legge inn en 404 page, elelr feil passord side elns eller! rød tekst i login et eller annet
