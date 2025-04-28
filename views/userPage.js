@@ -17,6 +17,6 @@ function userPageView(){
 
     </div> <br>
 
-    <h1 id='user'>Bruker: Navn Navnesen <button id='logOutBtn' onclick="logInPageView()">Logg ut</button></h1>
+    <h1 id='user'>Bruker: ${model.app.loggedInUser.name} <button id='logOutBtn' onclick="logInPageView()">Logg ut</button></h1>
     `;
 }

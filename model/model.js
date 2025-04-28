@@ -7,7 +7,7 @@ const model = {
             'assignmentDeliveryPage', 'nextDaysAssignmentPage', 'adminClassPage', 'assignmentBank',
             'createNewAssignmentPage', 'editAssignmentPage', 'calendarPage', 'datePage' 
         ],
-
+        loggedInUser: {}
     },
 
     input:{
@@ -45,7 +45,7 @@ const model = {
        // adminOverview:[
         //    {id:1, classes:[className, assignments,], addNewClass:false}
        // ],
-
+        currentUser: {},
        /*Lage noen dummy users som kan teste login*/ 
         users:[
             {id:1, email: 'dummy@user.net', name: 'dummy', password:'111', admin: false,},
