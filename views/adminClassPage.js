@@ -19,7 +19,7 @@ function adminClassPageView(){
         </div> <br>
         
         <div>
-        <h1 id="adminClassPageHeader"> Adminoversikt over klassene <button id="addBox">Trykk her for å legge til flere klasser</button></h1>
+        <h1 id="adminClassPageHeader"> Adminoversikt over klassene <button id="addBox">Trykk her for å legge til flere klasser</button> <button id="addBox" onclick="createNewAssignmentPageView()">Trykk her for å lage en oppgave</button></h1>
         </div>
         
         <div id="adminClassBoxes">

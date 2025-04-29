@@ -9,10 +9,7 @@ document.getElementById('app').innerHTML = /*HTML*/`
     </div> <br>
 
 <h1 id="logInHeader">Logg inn</h1>
-<div id="chooseRole">
-<button class="studentRole" onclick="">Elev</button>
-<button class="adminRole" onclick="">Admin</button> <br>
-</div>
+
 
 <div id="logInForm">
 <input type="email" id="email" name="email" placeholder="Email" oninput="model.input.logInInput.emailInput = this.value"> 
