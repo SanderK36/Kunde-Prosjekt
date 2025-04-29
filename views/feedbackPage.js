@@ -23,9 +23,9 @@ function feedbackPageView(){
     <h2>Oppgave: Hvordan gjøre et godt morgenmøte</h2>
     <div id="feedBackLine"></div>
     <div class="bulletPoints">
-    <li id="feedBackLi">Test</li>
-    <li id="feedBackLi">Test</li>
-    <li id="feedBackLi">Test</li>
+    <li id="feedBackLi">Hva kan du ha forberedt deg på til morgenmøtet?</li>
+    <li id="feedBackLi">Hvordan kan du bidra til et godt morgenmøte?</li>
+    <li id="feedBackLi">Hvilke styrker kan man bruke?</li>
     </div>
 
     </div> 
@@ -60,9 +60,9 @@ function feedbackPageView(){
     <h2 id="feedBackText">Oppgave: Hvordan gjøre et godt morgenmøte</h2>
     <div id="feedBackLine"></div>
     <div class="bulletPoints">
-    <li id="feedBackLi">Test</li>
-    <li id="feedBackLi">Test</li>
-    <li id="feedBackLi">Test</li>
+    <li id="feedBackLi">Hva kan du ha forberedt deg på til morgenmøtet?</li>
+    <li id="feedBackLi">Hvordan kan du bidra til et godt morgenmøte?</li>
+    <li id="feedBackLi">Hvilke styrker kan man bruke?</li>
     </div>
 
     </div> 

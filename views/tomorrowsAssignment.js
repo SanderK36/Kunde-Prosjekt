@@ -23,9 +23,9 @@ function tomorrowsAssignmentView(){
     <br>
 
     <div class="bulletPoints">
-    <li>Test</li>
-    <li>Test</li>
-    <li>Test</li>
+    <li>Har du gjort endringer i tanker/ innstilling/ handlinger her på GET som har gjort deg god/ bedre?</li>
+    <li>Hva har du gjort for endringer?</li>
+    <li>Hva kan du gjøre bedre?</li>
     </div>
     `;
     } else {
@@ -51,9 +51,9 @@ function tomorrowsAssignmentView(){
     <br>
 
     <div class="bulletPoints">
-    <li>Test</li>
-    <li>Test</li>
-    <li>Test</li>
+    <li>Har du gjort endringer i tanker/ innstilling/ handlinger her på GET som har gjort deg god/ bedre?</li>
+    <li>Hva har du gjort for endringer?</li>
+    <li>Hva kan du gjøre bedre?</li>
     </div>
     `;
     }
