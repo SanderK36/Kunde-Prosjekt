@@ -215,6 +215,8 @@ h2:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .box {
     display: flex;
     align-items: center;
@@ -344,7 +346,7 @@ h2:hover {
 }
 
 .fa-bell {
-    color: #ff7e5f;
+    
     transition: transform 0.3s ease, color 0.6s ease, filter 0.3s ease;
 }
 
@@ -777,18 +779,179 @@ h2:hover {
 
 #adminClassPageHeader {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
+    justify-content: center;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    margin: 20px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#adminClassWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
-    max-width: 600px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#adminClassPageHeader h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 15px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#adminActions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#addClassBtn, #createAssignmentBtn {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#addClassBtn:hover, #createAssignmentBtn:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#addClassBtn:active, #createAssignmentBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#adminClassBoxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.classBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 12px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.classBox:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.classBox .fa-pen-to-square {
+    font-size: 1rem;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.classBox .fa-pen-to-square:hover {
+    transform: scale(1.2);
+    color: #d9480f;
+}
+
+/* userButton.adminActive {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+} */
+
+/* .userButton.adminActive:hover {
+    background: #e0e0e0;
+    transform: scale(1.1);
+} */
+
+@media (max-width: 768px) {
+    #adminClassWrapper {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #adminClassPageHeader {
+        padding: 15px;
+    }
+
+    #adminClassPageHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    #addClassBtn, #createAssignmentBtn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    #adminClassBoxes {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .classBox {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+@media (max-width: 480px) {
+    #adminClassPageHeader h1 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    #adminActions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #addClassBtn, #createAssignmentBtn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    #adminClassBoxes {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .classBox {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
 
 .fa-pen-to-square {
@@ -1081,3 +1244,468 @@ h2:hover {
         padding: 8px 15px;
     }
 }
+
+
+#profileWrapper {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+#profileCard {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+#profileCard:hover {
+    transform: translateY(-3px);
+}
+
+#profileAvatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+#profileName {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+#profileRole {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+#profileInfo {
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.infoItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.infoLabel {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+#quickSettings {
+    margin: 20px 0;
+}
+
+#quickSettings h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#quickSettings label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+#quickSettings input[type="checkbox"] {
+    accent-color: #ff7e5f;
+}
+
+#profileActions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#editProfileBtn, #saveSettingsBtn, #logOutBtn {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#editProfileBtn:hover, #saveSettingsBtn:hover, #logOutBtn:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    #profileWrapper {
+        margin: 20px auto;
+    }
+
+    #profileCard {
+        padding: 20px;
+    }
+
+    #profileName {
+        font-size: 1.5rem;
+    }
+
+    #profileAvatar img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    #profileName {
+        font-size: 1.25rem;
+    }
+
+    #profileRole, .infoItem, #quickSettings label {
+        font-size: 0.875rem;
+    }
+
+    #editProfileBtn, #saveSettingsBtn, #logOutBtn {
+        padding: 8px 15px;
+        font-size: 0.875rem;
+    }
+
+    #profileActions {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+#assignmentWrapper {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#assignmentCard {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#assignmentCard:hover {
+    transform: translateY(-3px);
+}
+
+#assignmentTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#assignmentContent h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.lineDiv {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 90%;
+    margin: 15px auto;
+}
+
+.bulletPoints {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.bulletPoints li {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    position: relative;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bulletPoints li::before {
+    content: '\2022';
+    color: #ff7e5f;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bulletPoints li:hover {
+    transform: translateY(-2px);
+}
+
+#reflectionInput {
+    background: #f8fafc;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    height: 120px;
+    width: 90%;
+    max-width: 500px;
+    resize: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 20px auto;
+    display: block;
+}
+
+#submitReflectionBtn {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 10px auto;
+    display: block;
+}
+
+#submitReflectionBtn:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    #assignmentWrapper {
+        margin: 20px auto;
+    }
+
+    #assignmentCard {
+        padding: 20px;
+    }
+
+    #assignmentTitle {
+        font-size: 1.5rem;
+    }
+
+    #assignmentContent h3 {
+        font-size: 1.25rem;
+    }
+
+    .bulletPoints li {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    #reflectionInput {
+        width: 95%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    #assignmentTitle {
+        font-size: 1.25rem;
+    }
+
+    #assignmentContent h3 {
+        font-size: 1.1rem;
+    }
+
+    .bulletPoints li {
+        font-size: 0.875rem;
+    }
+
+    #reflectionInput, #submitReflectionBtn {
+        font-size: 0.875rem;
+    }
+
+    #submitReflectionBtn {
+        padding: 8px 15px;
+    }
+}
+
+#searchWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#searchHeader {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+#searchResults {
+    width: 100%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+.searchResultsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.searchResultItem {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.searchResultItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.searchResultItem::before {
+    content: '\2022';
+    color: #ff7e5f;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.searchResultItem.noResults {
+    text-align: center;
+    cursor: default;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+}
+
+.searchResultItem.noResults::before {
+    content: none;
+}
+
+.searchResultWeek {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.searchResultTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.searchResultText {
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    #searchWrapper {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #searchHeader {
+        font-size: 1.5rem;
+        padding: 12px 15px;
+    }
+
+    #searchResults {
+        padding: 10px;
+    }
+
+    .searchResultItem {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+
+    .searchResultWeek {
+        font-size: 0.85rem;
+    }
+
+    .searchResultTitle {
+        font-size: 1rem;
+    }
+
+    .searchResultText {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchHeader {
+        font-size: 1.25rem;
+        padding: 10px 12px;
+    }
+
+    .searchResultItem {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .searchResultWeek {
+        font-size: 0.8rem;
+    }
+
+    .searchResultTitle {
+        font-size: 0.95rem;
+    }
+
+    .searchResultText {
+        font-size: 0.85rem;
+    }
+}
+

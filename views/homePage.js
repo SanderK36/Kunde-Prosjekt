@@ -12,6 +12,7 @@ function homePageView(){
     <div id="search">
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
+    
     </div>
 
     </div> <br>

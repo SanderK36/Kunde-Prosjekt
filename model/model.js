@@ -48,10 +48,10 @@ const model = {
         currentUser: {},
        /*Lage noen dummy users som kan teste login*/ 
         users:[
-            {id:1, email: 'dummy@user.net', name: 'dummy', password:'111', admin: false,},
-            {id:2, email: 'jeg@user.net', name: 'jeg', password:'222', admin: false,},
-            {id:3, email: 'deg@user.net', name: 'deg', password:'333', admin: false},
-            {id:4, email: 'admin@user.net', name: 'admin', password:'123', admin: true}
+            {id:1, email: 'dummy@user.net', name: 'Dummy', password:'111', admin: false,},
+            {id:2, email: 'jeg@user.net', name: 'Jeg', password:'222', admin: false,},
+            {id:3, email: 'deg@user.net', name: 'Deg', password:'333', admin: false},
+            {id:4, email: 'admin@user.net', name: 'Admin', password:'123', admin: true}
         ],
         date:{day:1,week:1,month:1,year:2025},
 

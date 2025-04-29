@@ -15,12 +15,3 @@ function searchAssignment(){
     }
     
 }
-
-/*
-Få ut data som matcher med søk - opgpavene da
-lurt å ha en controller som søker og returner html'en - 
-*/
-
-// function searchPageView() {
-//     console.log("Searching " + model.input.search.searchInput);
-// }
