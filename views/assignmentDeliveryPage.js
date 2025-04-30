@@ -36,7 +36,8 @@ function assignmentDeliveryPageView(){
 
         <div id="assignmentWrap">
     <button>Lever</button>
-    <button>Avbryt</button>
+    <button onclick = "homePageView()">Avbryt</button>
+    <button onclick = "feedbackPageView()">Tilbakemelding</button>
     </div>
 
     </div>
@@ -77,7 +78,7 @@ function assignmentDeliveryPageView(){
 
         <div id="assignmentWrap">
     <button>Lever</button>
-    <button>Avbryt</button>
+    <button onclick = "homePageView()">Avbryt</button>
     <button onclick = "feedbackPageView()">Tilbakemelding</button>
     </div>
 
