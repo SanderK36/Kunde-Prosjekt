@@ -70,7 +70,7 @@ function feedbackPageView(){
     <h2>Tilbakemelding</h2>
     <div id="feedBackLine"></div>
     <textarea name="" id="feedbackInput" placeholder="Skriv tilbakemelding her..."></textarea><br>
-    <button id="feedBackBtn" onclick="">Send</button>
+    <button id="feedBackBtn" onclick="assignmentDeliveryPageView()">Send</button>
     </div>
     </div>
     
