@@ -1709,3 +1709,311 @@ h2:hover {
     }
 }
 
+#editAssignmentBtn {
+    background: linear-gradient(135deg, #e66b4f, #e6a16b);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 0.7rem; 
+    font-weight: 500;
+    text-transform: uppercase; 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    display: inline-flex; 
+    align-items: center;
+    gap: 6px; 
+}
+
+
+#editAssignmentBtn:hover {
+    background: linear-gradient(135deg, #ca5c43, #e6a16b);
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
+}
+
+
+#editAssignmentBtn:active {
+    transform: translateY(0); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+#editAssignmentWrapper {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+
+#editAssignmentCard {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#editAssignmentCard:hover {
+    transform: translateY(-3px);
+}
+
+
+#editAssignmentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    background: #f8fafc;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.formGroup textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+.formGroup select {
+    height: 40px;
+}
+
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border: 1px solid #ff7e5f;
+    box-shadow: 0 0 8px rgba(254, 180, 123, 0.5);
+}
+
+
+#assignmentWrap {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#assignmentWrap button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#assignmentWrap button:hover {
+    background: linear-gradient(135deg, #f4a261, #e76f51);
+    border: 1px solid #d9480f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+#assignmentWrap button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.lineDiv {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 90%;
+    margin: 15px auto;
+}
+
+
+@media (max-width: 768px) {
+    #editAssignmentWrapper {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #editAssignmentCard {
+        padding: 20px;
+    }
+
+    #editAssignmentForm {
+        gap: 15px;
+    }
+
+    .formGroup label {
+        font-size: 0.95rem;
+    }
+
+    .formGroup input,
+    .formGroup select,
+    .formGroup textarea {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editAssignmentCard {
+        padding: 15px;
+    }
+
+    #editAssignmentForm {
+        gap: 10px;
+    }
+
+    .formGroup label {
+        font-size: 0.875rem;
+    }
+
+    .formGroup input,
+    .formGroup select,
+    .formGroup textarea {
+        font-size: 0.875rem;
+        padding: 8px 12px;
+    }
+
+    #assignmentWrap {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #assignmentWrap button {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+}
+
+
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.tag {
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    color: #2c3e50;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+
+.tag.selected {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.tag:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(254, 180, 123, 0.5);
+}
+
+.headerAvatar {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.headerAvatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.headerAvatar:hover {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+    .headerAvatar img {
+        width: 32px;
+        height: 32px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerAvatar img {
+        width: 28px;
+        height: 28px;
+        margin-left: 6px;
+    }
+}
+
+.specialDay {
+    background: linear-gradient(135deg, #e63946, #d00000);
+    color: white;
+}
+
+.specialDay:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.differentMonth {
+    background: linear-gradient(135deg, #8b8686, #c4c0c0);
+    color: #c4c0c0;
+}
+
+.differentMonth:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

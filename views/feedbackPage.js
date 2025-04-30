@@ -15,6 +15,9 @@ function feedbackPageView(){
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
     </div>
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
     </div> <br>
 
     
@@ -33,7 +36,7 @@ function feedbackPageView(){
     <h2>Tilbakemelding</h2>
     <div id="feedBackLine"></div>
     <textarea name="" id="feedbackInput" placeholder="Skriv tilbakemelding her..."></textarea><br>
-    <button id="feedBackBtn" onclick="assignmentDeliveryPageView()">Send</button>
+    <button id="feedBackBtn" onclick="assignMentDeliveryPageView()">Send</button>
     </div>
     </div>
     
@@ -51,6 +54,9 @@ function feedbackPageView(){
     <div id="search">
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
+    </div>
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
     </div>
     </div> <br>
 
@@ -70,7 +76,7 @@ function feedbackPageView(){
     <h2>Tilbakemelding</h2>
     <div id="feedBackLine"></div>
     <textarea name="" id="feedbackInput" placeholder="Skriv tilbakemelding her..."></textarea><br>
-    <button id="feedBackBtn" onclick="assignmentDeliveryPageView()">Send</button>
+    <button id="feedBackBtn" onclick="">Send</button>
     </div>
     </div>
     

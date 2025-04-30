@@ -61,7 +61,6 @@
 
 function tomorrowsAssignmentView() {
     const isAdmin = model.app.loggedInUser.admin === true;
-    // Calculate tomorrow's date
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     const tomorrowDate = tomorrow.toLocaleDateString('no-NO', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -78,6 +77,9 @@ function tomorrowsAssignmentView() {
                 <input type="text" id="searchInput" placeholder="Søk...">
                 <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
             </div>
+            <div class="headerAvatar" onclick="userPageView()">
+             <img src="./img/avatar.png" alt="User Avatar">
+            </div>
         </div>
 
         <div id="assignmentWrapper">
@@ -91,8 +93,6 @@ function tomorrowsAssignmentView() {
                         <li>Hva har du gjort for endringer?</li>
                         <li>Hva kan du gjøre bedre?</li>
                     </ul>
-                    <textarea id="reflectionInput" placeholder="Skriv dine refleksjoner her..."></textarea>
-                    <button id="submitReflectionBtn" onclick="submitReflection()">Send inn</button>
                 </div>
             </div>
         </div>

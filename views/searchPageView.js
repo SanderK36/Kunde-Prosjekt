@@ -72,6 +72,9 @@ function searchPageView() {
               <input type="text" id="searchInput" placeholder="Søk..." value="${model.input.search.searchInput || ''}">
               <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
           </div>
+          <div class="headerAvatar" onclick="userPageView()">
+            <img src="./img/avatar.png" alt="User Avatar">
+        </div>
       </div>
       <div id="searchWrapper">
           <h1 id="searchHeader">Søk: ${model.input.search.searchInput || ''}</h1>
@@ -88,7 +91,7 @@ function searchResults() {
           model.data.assignments[i].text.includes(model.input.search.searchInput)) {
           html += /*HTML*/`
               <li class="searchResultItem" onclick="viewAssignment(${i})">
-                  <div class="searchResultWeek">Uke ${model.data.assignments[i].week}</div>
+                  <div class="searchResultWeek">${model.data.assignments[i].week}</div>
                   <div class="searchResultTitle">${model.data.assignments[i].title}</div>
                   <div class="searchResultText">${model.data.assignments[i].text}</div>
               </li>

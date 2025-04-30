@@ -53,6 +53,9 @@ function adminClassPageView() {
                     <input type="text" id="searchInput" placeholder="Søk...">
                     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
                 </div>
+                <div class="headerAvatar" onclick="userPageView()">
+                    <img src="./img/avatar.png" alt="User Avatar">
+                </div>
             </div>
 
             <div id="adminClassWrapper">

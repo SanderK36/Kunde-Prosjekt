@@ -14,6 +14,9 @@ function assignmentDeliveryPageView(){
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
     </div>
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
 
     </div> <br>
 
@@ -36,8 +39,8 @@ function assignmentDeliveryPageView(){
 
         <div id="assignmentWrap">
     <button>Lever</button>
-    <button onclick = "homePageView()">Avbryt</button>
-    <button onclick = "feedbackPageView()">Tilbakemelding</button>
+    <button onclick="homePageView()">Avbryt</button>
+    <button onclick="feedbackPageView()">Tilbakemelding</button>
     </div>
 
     </div>
@@ -56,7 +59,9 @@ function assignmentDeliveryPageView(){
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
     </div>
-
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
     </div> <br>
 
    
@@ -76,10 +81,10 @@ function assignmentDeliveryPageView(){
 
         </div>
 
-        <div id="assignmentWrap">
-    <button>Lever</button>
-    <button onclick = "homePageView()">Avbryt</button>
-    <button onclick = "feedbackPageView()">Tilbakemelding</button>
+    <div id="assignmentWrap">
+        <button>Lever</button>
+        <button onclick="homePageView()">Avbryt</button>
+        <button onclick="feedbackPageView()">Tilbakemelding</button>
     </div>
 
     </div>

@@ -13,6 +13,9 @@ function createNewAssignmentPageView(){
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
     </div>
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
 
     </div> <br>
     <div id="newAssignmentWrap">
@@ -77,6 +80,9 @@ function createNewAssignmentPageView(){
     <div id="search">
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
     </div>
 
     </div> <br>

@@ -12,12 +12,20 @@ function homePageView(){
     <div id="search">
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
-    
+    </div>
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
     </div>
 
     </div> <br>
 
-    <h1 class="topLeftBox" id="currentWeek">Uke 8</h1>
+    <h2 class="topLeftBox" id="currentWeek">Uke 8: <select name="dropdown" id="dropdown">
+    <option value="option1">Uke 8</option>
+    <option value="option2">Uke 9</option>
+    <option value="option3">Uke 10</option>
+    <option value="option4">Uke 11</option>
+    </select></h2>
 
     <div class="test"></div>
     
@@ -36,15 +44,15 @@ function homePageView(){
         else if(i === 8 || i === 15) content = "8";
         else if(i === 9) content = "Mandag";
         else if(i === 10) content = "Psykologisk trygghet"
-        else if(i === 11) content = "Hvordan gjøre et godt morgenmøte";
+        else if(i === 11) content = `Hvordan gjøre et godt morgenmøte <button id="editAssignmentBtn" onclick="editAssignmentPageView()"> <i class="fa-solid fa-pencil"></i>Rediger</button>`;
         else if(i === 12) content = "Morramøtet bli kjent";
-        else if(i === 13) content = `<div class="gridIcons"><i class="fa-solid fa-square-check"></i></div>`;
+        else if(i === 13) content = `<div class="gridIcons" onclick="assignmentDeliveryPageView()"><i class="fa-solid fa-square-check"></i></div>`;
         else if(i === 14) content = `<div class="gridIcons"><i class="fa-solid fa-file" onclick="assignmentDeliveryPageView()"></i> <i class="fa-solid fa-comment" onclick="feedbackPageView()"></i></div>`;
         else if(i === 16) content = "Tirsdag";
         else if(i === 17) content = "Psykologisk trygghet"
-        else if(i === 18) content = "Hvordan være forberedt"
+        else if(i === 18) content = `Hvordan være forberedt <button id="editAssignmentBtn" onclick="editAssignmentPageView()"> <i class="fa-solid fa-pencil"></i>Rediger</button>`
         else if(i === 19) content = "Signaturstyrker Kommunikasjon"
-        else if(i === 20) content = `<div class="gridIcons"><i class="fa-solid fa-square-xmark"></i></div>`;
+        else if(i === 20) content = `<div class="gridIcons" onclick="assignmentDeliveryPageView()"><i class="fa-solid fa-square-xmark"></i></div>`;
         else if(i === 21) content = `<div class="gridIcons"><i class="fa-solid fa-file" onclick="assignmentDeliveryPageView()"></i> <i class="fa-solid fa-comment" onclick="feedbackPageView()"></i></div>`;
         else content = `Item ${i}`;
 
@@ -63,10 +71,18 @@ function homePageView(){
     <input type="text" id="searchInput" placeholder="Søk...">
     <i class="fa-solid fa-magnifying-glass" onclick="searchAssignment()"></i>
     </div>
-
+    <div class="headerAvatar" onclick="userPageView()">
+    <img src="./img/avatar.png" alt="User Avatar">
+    </div>
+    </div>
     </div> <br>
 
-    <h1 class="topLeftBox" id="currentWeek">Uke 8</h1>
+    <h2 class="topLeftBox" id="currentWeek">Uke 8: <select name="dropdown" id="dropdown">
+    <option value="option1">Uke 8</option>
+    <option value="option2">Uke 9</option>
+    <option value="option3">Uke 10</option>
+    <option value="option4">Uke 11</option>
+    </select></h2>
 
     <div class="test"></div>
     
