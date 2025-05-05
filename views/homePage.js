@@ -79,9 +79,9 @@ function homePageView(){
 
     <h2 class="topLeftBox" id="currentWeek">Uke 8: <select name="dropdown" id="dropdown">
     <option value="option1">Uke 8</option>
-    <option value="option2">Uke 9</option>
-    <option value="option3">Uke 10</option>
-    <option value="option4">Uke 11</option>
+    <option value="option2">Uke 7</option>
+    <option value="option3">Uke 6</option>
+    <option value="option4">Uke 5</option>
     </select></h2>
 
     <div class="test"></div>
