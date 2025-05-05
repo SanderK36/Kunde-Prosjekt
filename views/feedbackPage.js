@@ -77,6 +77,7 @@ function feedbackPageView(){
     <div id="feedBackLine"></div>
     <textarea name="" id="feedbackInput" placeholder="Skriv tilbakemelding her..."></textarea><br>
     <button id="feedBackBtn" onclick="">Send</button>
+    <button id="feedBackBtn" onclick="homePageView()">Tilbake</button>
     </div>
     </div>
     
